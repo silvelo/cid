@@ -11,7 +11,7 @@ env:
 
 jobs:
   release:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,27 +21,3 @@ jobs:
 
       - name: Release
         run: npm run release
-
-  merge_release:
-    needs: [release]
-    runs-on: ubuntu-20.04
-    if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: main
-
-      - name: Set git config
-        run: |
-          git config --local user.email ${{env.USER_MAIL}}
-          git config --local user.name ${{env.USER_NAME}}
-
-      - name: Merge ${{env.FROM_BRANCH}} and push to ${{env.TO_BRANCH}}
-        run: |
-          git fetch
-          git checkout ${{env.TO_BRANCH}}
-          git pull
-          git merge ${{env.FROM_BRANCH}} -m "Auto-merge ${{env.FROM_BRANCH}} to ${{env.TO_BRANCH}}"
-          git push
