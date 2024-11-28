@@ -2,9 +2,11 @@
   "name": "cid",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "@eslint/js": "^9.15.0",
     "eslint": "^9.15.0",
     "globals": "^15.12.0",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.4.1"
   }
 }
