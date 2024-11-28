@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/silvelo/cid/compare/v1.0.0...v1.1.0) (2024-11-28)
+
+
+### Bug Fixes
+
+* Fixed string ([1952984](https://github.com/silvelo/cid/commit/1952984ff1e75862dd54b6994ab5cd99bf24f7c4))
+
+
+### Features
+
+* say hello ([389c9b0](https://github.com/silvelo/cid/commit/389c9b0edb77042ce551183136e0ca2a5f497bae))
+
 # 1.0.0 (2024-11-28)
 
 
