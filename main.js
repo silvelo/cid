@@ -1,2 +1,2 @@
-const variable = 'new Variable';
+const variable = 'new variable';
 console.log(variable);
