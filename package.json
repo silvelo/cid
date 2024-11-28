@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "release": "standard-version"
+    "release": "semantic-release"
   },
   "author": "",
   "license": "ISC",
@@ -15,9 +15,17 @@
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.15.0",
+    "@semantic-release/changelog": "~6.0.3",
+    "@semantic-release/commit-analyzer": "~11.1.0",
+    "@semantic-release/git": "~10.0.1",
+    "@semantic-release/github": "~9.2.2",
+    "@semantic-release/npm": "~11.0.1",
+    "@semantic-release/release-notes-generator": "~12.1.0",
     "eslint": "^9.15.0",
     "globals": "^15.12.0",
+    "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.4.1"
+    "prettier": "^3.4.1",
+    "semantic-release": "^24.2.0"
   }
 }
